@@ -9,16 +9,16 @@ describe('<List/>', () => {
 
     ReactDOM.render(<List
       header='adyceum'
-      cards= {
+      cards={
         [{ id: 'a', title: 'First card', content: 'lorem ipsum' }]
-              } />, div
+      } />, div
     )
     ReactDOM.unmountComponentAtNode(div);
   })
   it('renders the UI as expected', () => {
     const tree = renderer
-      .create(<Messages name="Messages" unread={4}/>)
+      .create(<Messages name="Messages" unread={4} />)
       .toJSON();
-    expect(tree).toMatchSnapshot();  
-    });
+    expect(tree).toMatchSnapshot();
+  });
 }) 
