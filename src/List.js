@@ -3,7 +3,7 @@ import Card from './Card'
 import './List.css';
 
 export default function List(props) {
-  console.log(props);
+  console.log(props, 'coming from the lists');
   return (
     <section className='List'>
       <header className='List-header'>
@@ -17,12 +17,9 @@ export default function List(props) {
             content={card.content}
           />
         )}
-        <button
-          type='button'
-          className='List-add-button'
-        >
-          + Add Random Card
-        </button>
+        <button type='button' className='List-add-button'>+ Add Random Card</button>
+
+
       </div>
     </section>
   )
